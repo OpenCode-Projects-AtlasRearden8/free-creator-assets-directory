@@ -1,0 +1,12 @@
+{
+  "name": "free-creator-assets-directory",
+  "version": "1.0.0",
+  "description": "Static single-file directory of genuinely free asset sources for authors and small businesses. JSON-driven cards with need-based filters. MIT licensed.",
+  "license": "MIT",
+  "author": "Asdale Dynamics, LLC",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "test": "node test/validate.js"
+  }
+}

@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A directory of genuinely free image, font, music, icon, and mockup sources for authors and small businesses. Each card states the license in plain English, what you may sell, where to download officially, and proof it is truly free.">
+<title>Free Creator Assets Directory - truly free sources, license rules in plain English</title>
+<style>
+:root {
+  --ink: #22302e;
+  --paper: #f6f2ea;
+  --card: #fffdf7;
+  --accent: #b4552d;
+  --accent-soft: #f1ddce;
+  --muted: #6d7a76;
+  --line: #e2d9c8;
+  --none: #2e7d4f;
+  --credit: #9c6f1a;
+  --check: #8a5a3b;
+  --badge-bg: #eef3ec;
+  --shadow: 0 1px 2px rgba(42, 45, 40, 0.06), 0 8px 24px rgba(42, 45, 40, 0.07);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e2d5;
+    --paper: #1d201f;
+    --card: #262a28;
+    --accent: #e0824f;
+    --accent-soft: #4a3326;
+    --muted: #9aa6a1;
+    --line: #3a403c;
+    --none: #7fc494;
+    --credit: #d8a94f;
+    --check: #d79c72;
+    --badge-bg: #2d342f;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.55;
+}
+a { color: var(--accent); }
+header.site {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 42px 20px 8px;
+}
+header.site h1 { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.3rem); letter-spacing: -0.02em; }
+header.site p.tagline { margin: 0; max-width: 60ch; color: var(--muted); font-size: 1.02rem; }
+main { max-width: 1080px; margin: 0 auto; padding: 18px 20px 8px; }
+
+.controls {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  margin: 18px 0 8px;
+}
+.controls .label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+.needs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.chip {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.chip[aria-pressed="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--ink);
+  font-weight: 600;
+}
+.chip:hover { border-color: var(--accent); }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 700px) { .row { grid-template-columns: 1fr; } }
+.row input[type="search"], .row select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+.row .hint { grid-column: 1 / -1; font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+.result-count {
+  margin: 10px 2px 16px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card h2 {
+  margin: 0;
+  font-size: 1.08rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.card h2 a { text-decoration: none; color: var(--ink); }
+.card h2 a:hover { text-decoration: underline; }
+.pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.pill.license {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.pill.a-none { color: var(--none); }
+.pill.a-credit { color: var(--credit); }
+.pill.a-check { color: var(--check); }
+.card dl { margin: 0; display: grid; gap: 8px; font-size: 0.93rem; }
+.card dt { font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 1px; }
+.card dd { margin: 0; }
+.card .links { display: flex; flex-wrap: wrap; gap: 10px 16px; font-size: 0.93rem; padding-top: 4px; }
+.card .links a { text-decoration: none; font-weight: 600; }
+.card .links a:hover { text-decoration: underline; }
+.card .meta {
+  border-top: 1px dashed var(--line);
+  padding-top: 8px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.card .meta strong { color: var(--ink); font-weight: 600; }
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 60px 20px;
+}
+footer.site {
+  max-width: 1080px;
+  margin: 24px auto 0;
+  padding: 18px 20px 40px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+footer.site .disclaimer {
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  background: var(--card);
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 14px;
+}
+footer.site p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<header class="site">
+  <h1>Free Creator Assets Directory</h1>
+  <p class="tagline">Genuinely free images, fonts, music, icons, and mockups - with the license rules in plain English, what you may sell, where to download from the official source, and a link that proves it is truly free.</p>
+</header>
+<main>
+  <div class="controls" id="controls">
+    <span class="label">What do you need?</span>
+    <div class="needs" id="needs" role="group" aria-label="Need filters"></div>
+    <div class="row">
+      <div>
+        <label class="label" for="search">Search</label>
+        <input type="search" id="search" placeholder="e.g. public domain art, CC0 fonts, no-attribution music…" autocomplete="off">
+      </div>
+      <div>
+        <label class="label" for="category">Kind of asset</label>
+        <select id="category">
+          <option value="">All kinds</option>
+          <option value="images">Images</option>
+          <option value="fonts">Fonts</option>
+          <option value="music">Music</option>
+          <option value="icons">Icons</option>
+          <option value="mockups">Mockups and illustrations</option>
+        </select>
+      </div>
+      <div>
+        <label class="label" for="attribution">Credit requirement</label>
+        <select id="attribution">
+          <option value="">Any</option>
+          <option value="none">No credit needed</option>
+          <option value="credit">Credit required</option>
+          <option value="check">Check each item</option>
+        </select>
+      </div>
+      <div>
+        <label class="label" for="recheck">Freshness</label>
+        <select id="recheck">
+          <option value="">All dates</option>
+          <option value="year">checked in the last year</option>
+        </select>
+      </div>
+      <p class="hint">Click a need above to filter. Everything on this page lives offline in this single file - no tracking, no sign-ups, no affiliate links.</p>
+    </div>
+  </div>
+  <p class="result-count" id="count" role="status" aria-live="polite"></p>
+  <section class="grid" id="cards" aria-label="Source cards"></section>
+</main>
+<footer class="site">
+  <p class="disclaimer" id="disclaimer-note"></p>
+  <p>Plain-English companion to the <a href="#" id="companion-link">plain-english-ip-guide</a> for copyright and trademarks. No affiliate links, all official download pages.</p>
+  <p>Built with care by Asdale Dynamics, LLC - "like a friend would." MIT licensed.</p>
+</footer>
+
+<script id="assets-data" type="application/json">
+<!-- ASSETS_JSON_BEGIN -->
+{
+  "meta": {
+    "title": "Free Creator Assets Directory",
+    "tagline": "Genuinely free images, fonts, music, icons, and mockups for authors and small businesses - with the license rules in plain English.",
+    "version": "1.0.0",
+    "updated": "2026-10-30",
+    "companionNote": "This directory complements the plain-english-ip-guide, which explains copyright, trademarks, and licensing for creators in the same friendly language.",
+    "disclaimer": "This page is educational, not legal advice. Licenses can change. Before you rely on a source, open the proof link, confirm the license is still the same, and keep a dated note or screenshot of what you saw."
+  },
+  "needs": {
+    "book-cover": {
+      "label": "Book covers",
+      "blurb": "Art, fonts, and mockups you can use on covers and marketing for books you sell."
+    },
+    "book-interior": {
+      "label": "Book interiors",
+      "blurb": "Assets safe to embed in print or ebook files you sell (fonts must allow embedding)."
+    },
+    "social": {
+      "label": "Social media",
+      "blurb": "Images, icons, and music for posts, reels, and channel branding."
+    },
+    "video": {
+      "label": "Videos",
+      "blurb": "Music and visuals for YouTube, promos, and courses, monetized or not."
+    },
+    "website": {
+      "label": "Websites and blogs",
+      "blurb": "Assets for sites, hubs, and landing pages."
+    },
+    "print": {
+      "label": "Print and paper",
+      "blurb": "Assets for flyers, business cards, posters, and handouts."
+    },
+    "merch": {
+      "label": "Merch and print-on-demand",
+      "blurb": "Assets you may print on, or as, physical products you sell (mugs, shirts, posters)."
+    }
+  },
+  "entries": [
+    {
+      "name": "The Met Open Access",
+      "category": "images",
+      "url": "https://www.metmuseum.org/",
+      "downloadUrl": "https://www.metmuseum.org/art/the-collection",
+      "licenseName": "Creative Commons Zero (CC0)",
+      "licensePlain": "The Metropolitan Museum of Art has released images of public-domain artworks directly into the public domain using CC0. That means no copyright applies to those images. No permission, no fees, no credit required.",
+      "sellPlain": "Yes, fully. Use the CC0 images in books you sell, on print-on-demand products, in ads, anywhere. Add your own creative changes and you do not need to worry about the image at all.",
+      "proofUrl": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+      "proofNote": "The Met's own Open Access policy page states the museum places images of public-domain works under CC0, free to use for any purpose.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Only applies to images marked Open Access / Public Domain on the artwork page. Modern works still under copyright are not covered."
+    },
+    {
+      "name": "Smithsonian Open Access",
+      "category": "images",
+      "url": "https://www.si.edu/openaccess",
+      "downloadUrl": "https://collections.si.edu/",
+      "licenseName": "Creative Commons Zero (CC0)",
+      "licensePlain": "The Smithsonian has designated a huge share of its collection (millions of 2D/3D images) as CC0. The Smithsonian itself has given the images to everyone, so you may use them without asking or paying.",
+      "sellPlain": "Yes, fully. Books, merch, posters, video thumbnails, ads. CC0 images can be used in anything you sell.",
+      "proofUrl": "https://www.si.edu/openaccess",
+      "proofNote": "The Smithsonian's Open Access page states that its open-access assets are designated Creative Commons Zero, so anyone may use them for any purpose.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Giant library of art, history, aviation, and natural-history images plus 3D models. Search the collections portal and use CC0-designated assets."
+    },
+    {
+      "name": "Art Institute of Chicago - CC0 Collection",
+      "category": "images",
+      "url": "https://www.artic.edu/",
+      "downloadUrl": "https://www.artic.edu/collection",
+      "licenseName": "Public domain / CC0",
+      "licensePlain": "Most of the museum's famous works (over 50,000 images) are marked public domain or CC0, meaning no copyright applies to the images and no permission is needed.",
+      "sellPlain": "Yes, fully, for the marked images. Books, covers, prints, merch, ads. Check the rights label shown with each artwork before you plan a project around it.",
+      "proofUrl": "https://www.artic.edu/terms",
+      "proofNote": "The Art Institute's terms-of-use page states that public-domain artworks and their images may be used freely, and the site labels each work's rights status.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Beautiful impressionist and classic art scans. Filter the collection by 'Public domain' / 'CC0' when browsing."
+    },
+    {
+      "name": "Cleveland Museum of Art Open Access",
+      "category": "images",
+      "url": "https://www.clevelandart.org/",
+      "downloadUrl": "https://www.clevelandart.org/art/collection",
+      "licenseName": "Creative Commons Zero (CC0)",
+      "licensePlain": "The museum released tens of thousands of collection images as CC0 - the museum waived its rights, so the images are free for any use without asking.",
+      "sellPlain": "Yes, fully, for CC0-marked images: covers, prints, merch, marketing.",
+      "proofUrl": "https://www.clevelandart.org/open-access",
+      "proofNote": "The museum's own Open Access page describes releasing public-domain artwork images and data under CC0.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Also offers a clean open API if you want to pipe images into tools."
+    },
+    {
+      "name": "Rijksmuseum Collection Online",
+      "category": "images",
+      "url": "https://www.rijksmuseum.nl/en/rijksstudio",
+      "downloadUrl": "https://www.rijksmuseum.nl/en/collection",
+      "licenseName": "Public domain or CC0 for most images",
+      "licensePlain": "Images of works whose copyright has expired are public domain or CC0. The museum says most images can be freely used, including commercially, without permission. Some newer works are restricted - the site labels each one.",
+      "sellPlain": "Yes, for the public-domain/CC0 images: books, merch, posters, anything. Look for the 'Public Domain' or CC0 label on the object page before you use a specific image.",
+      "proofUrl": "https://data.rijksmuseum.nl/policy",
+      "proofNote": "The Rijksmuseum's published Information and Data Policy states that much of the collection website's data and images can be freely used, including for commercial purposes, without permission.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Famous for extremely high-resolution downloads - Rembrandt brushstrokes at poster size. Courtesy credit to 'Rijksmuseum, Amsterdam' is appreciated but not required for CC0/PD items."
+    },
+    {
+      "name": "NYPL Digital Collections",
+      "category": "images",
+      "url": "https://digitalcollections.nypl.org/",
+      "downloadUrl": "https://digitalcollections.nypl.org/",
+      "licenseName": "Public domain (marked items)",
+      "licensePlain": "Over 180,000 items are explicitly marked 'We believe it to be public domain', meaning the library believes the copyright has ended so no permission is needed.",
+      "sellPlain": "Yes, for marked public-domain items: covers, prints, merch, historical books and ephemera.",
+      "proofUrl": "https://www.nypl.org/research/collections/digital-collections/public-domain",
+      "proofNote": "NYPL publishes its public-domain policy and marks every free-to-use item in the collection interface.",
+      "attribution": "check",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Use the 'Public domain only' filter under Product Usage Rights. Some digitized items are still under copyright - stick to the marked ones."
+    },
+    {
+      "name": "National Archives (NARA) Catalog",
+      "category": "images",
+      "url": "https://www.archives.gov/",
+      "downloadUrl": "https://catalog.archives.gov/",
+      "licenseName": "US government work = public domain (mostly)",
+      "licensePlain": "Works made by US federal employees as part of their job are not eligible for US copyright, so they are treated as public domain. NARA says the vast majority of catalog images need no written permission to use.",
+      "sellPlain": "Yes, for government-produced images: books, posters, teachers' guides, merch. Check the 'Use Restrictions' field on each catalog record - the few remaining copyrighted items are flagged there.",
+      "proofUrl": "https://www.archives.gov/research/still-pictures/permissions",
+      "proofNote": "NARA's own copyright and permissions pages state that works of the US federal government are in the public domain and that most catalog images need no written permission.",
+      "attribution": "check",
+      "needs": [
+        "book-cover",
+        "book-interior",
+        "print",
+        "website",
+        "social"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Historical government photos, WWII posters, space program imagery. A courtesy credit to the National Archives is appreciated but not required."
+    },
+    {
+      "name": "Flickr Commons",
+      "category": "images",
+      "url": "https://www.flickr.com/commons",
+      "downloadUrl": "https://www.flickr.com/commons",
+      "licenseName": "'No known copyright restrictions'",
+      "licensePlain": "This is a shared archive run with libraries and museums. Each photo is labeled by the owning institution as 'no known copyright restrictions', so no permission is needed for those images.",
+      "sellPlain": "Generally yes for photos with that label, but the owning institution may phrase rights differently - read the rights statement shown with each photo before selling anything.",
+      "proofUrl": "https://www.flickr.com/commons",
+      "proofNote": "Flickr Commons is the official shared archive of publicly-funded institutions, and each participant publishes its own rights statement visible on the photo.",
+      "attribution": "check",
+      "needs": [
+        "book-cover",
+        "book-interior",
+        "print",
+        "website",
+        "social"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Wonderful vintage photography and ephemera. The rights label on each photo is your evidence."
+    },
+    {
+      "name": "Openverse",
+      "category": "images",
+      "url": "https://openverse.org/",
+      "downloadUrl": "https://openverse.org/",
+      "licenseName": "Search engine for CC-licensed and public-domain media",
+      "licensePlain": "Openverse is an official Creative Commons search engine. It finds images and audio that are licensed to be shared for free. The license depends on the item - CC0 items need nothing, CC BY items need a credit line.",
+      "sellPlain": "Depends on each item's license. CC0 and public-domain results: sell freely. CC BY results: sell freely but add a proper credit. Avoid anything that shows an NC (non-commercial) badge for products you sell.",
+      "proofUrl": "https://wordpress.org/openverse/about/",
+      "proofNote": "Openverse is run by WordPress/Automattic in partnership with Creative Commons, and lets you filter strictly by CC0 or CC BY before you pick anything.",
+      "attribution": "check",
+      "needs": [
+        "book-cover",
+        "print",
+        "website",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Best used with the 'CC0' or 'Use commercially + modify' filters checked. It's a search engine, so the proof lives on each linked source page."
+    },
+    {
+      "name": "Pexels",
+      "category": "images",
+      "url": "https://www.pexels.com/",
+      "downloadUrl": "https://www.pexels.com/",
+      "licenseName": "Pexels License",
+      "licensePlain": "Pexels grants an irrevocable worldwide license to use its photos and videos free for commercial and personal purposes, with no attribution required. You may not sell or distribute the photos as-is (as prints, posters, or on merch without adding real creative changes).",
+      "sellPlain": "Yes, inside creative work you sell: book interiors, websites, ads, social posts, videos. No for selling prints or merch of an unmodified photo. Modify meaningfully (add art, text, dramatic edits) if you want to print it on something.",
+      "proofUrl": "https://www.pexels.com/license/",
+      "proofNote": "Pexels' own license page spells out 'Attribution is not required' and the ban on selling unaltered copies. Some older uploads are even marked CC0.",
+      "attribution": "none",
+      "needs": [
+        "social",
+        "video",
+        "website",
+        "print",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Free stock photos and videos. Keep a screenshot of the license/dated note when used in anything high-stakes."
+    },
+    {
+      "name": "Unsplash",
+      "category": "images",
+      "url": "https://unsplash.com/",
+      "downloadUrl": "https://unsplash.com/",
+      "licenseName": "Unsplash License",
+      "licensePlain": "Unsplash grants an irrevocable worldwide license to use its photos free, including commercially, with no permission or credit needed - as long as you are not selling unaltered copies or reselling the photos.",
+      "sellPlain": "Yes, inside products you sell: book covers eventually transformed, websites, ads, videos. No for selling the photos themselves (as prints, wallpapers, stock, or merch) without adding significant creative changes.",
+      "proofUrl": "https://unsplash.com/license",
+      "proofNote": "Unsplash's license page states the core grant verbatim: free to use images for commercial purposes without attribution; its terms prohibit selling unaltered copies.",
+      "attribution": "none",
+      "needs": [
+        "social",
+        "video",
+        "website",
+        "print",
+        "book-cover"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Flagship free photography with a modern look. When in doubt for merch, pick from the CC0 museum/state sources instead."
+    },
+    {
+      "name": "Google Fonts",
+      "category": "fonts",
+      "url": "https://fonts.google.com/",
+      "downloadUrl": "https://fonts.google.com/",
+      "licenseName": "Open Font License / Apache (per family)",
+      "licensePlain": "Every family is open source under the SIL Open Font License, Apache, or similar. You may use them freely in any product, including books, PDFs, apps, and websites, forever, with no fees and no credit line required.",
+      "sellPlain": "Yes, inside everything you sell - print books, POD, ebooks, merch, software. The one limit: you cannot sell or bundle the font files themselves as a font library.",
+      "proofUrl": "https://fonts.google.com/faq",
+      "proofNote": "The Google Fonts FAQ states that all fonts are open source and free for all uses, print or digital, commercial or personal. Each family page shows its exact license text.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "book-interior",
+        "website",
+        "print",
+        "merch",
+        "social",
+        "video"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "OFL includes a font-embedding-permission declaration ('FSI') that makes embedding in ebook/PDF formats explicitly allowed."
+    },
+    {
+      "name": "Open Font Library",
+      "category": "fonts",
+      "url": "https://fontlibrary.org/",
+      "downloadUrl": "https://fontlibrary.org/",
+      "licenseName": "OFL / CC0 (per family)",
+      "licensePlain": "A curated library of freedom-licensed fonts. Every upload must be open-licensed (SIL Open Font License or Creative Commons CC0/public domain), so you may use them in any project including commercial ones.",
+      "sellPlain": "Yes, fonts used inside products you make (books, covers, brands, merchandise) are always allowed. You cannot sell the font files themselves as a font collection.",
+      "proofUrl": "https://fontlibrary.org/en/about",
+      "proofNote": "The library's about page states its mission to collect fonts that may be downloaded, used, and shared freely, with the license shown on every font page.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "book-interior",
+        "website",
+        "print",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Good place for unusual scripts and display faces beyond the Google Fonts mainstream."
+    },
+    {
+      "name": "The League of Moveable Type",
+      "category": "fonts",
+      "url": "https://www.theleagueofmoveabletype.com/",
+      "downloadUrl": "https://www.theleagueofmoveabletype.com/",
+      "licenseName": "SIL Open Font License 1.1",
+      "licensePlain": "The original open-source font foundry. Every font ships under the SIL Open Font License, which grants use in any product, embedding, modification, and redistribution - no fee or credit line needed for standard use.",
+      "sellPlain": "Yes, use the fonts in anything you sell, including books and merchandise. You just cannot sell the raw font files themselves, and modified versions must stick to the same terms.",
+      "proofUrl": "https://www.theleagueofmoveabletype.com/manifesto",
+      "proofNote": "The foundry's manifesto and per-font pages link the OFL text; the license ships inside every download folder as OFL.txt, which is your proof.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "book-interior",
+        "website",
+        "print",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Home of League Gothic, League Spartan, Orbitron, and other classics. Keep OFL.txt with any redistributed font file."
+    },
+    {
+      "name": "Velvetyne",
+      "category": "fonts",
+      "url": "https://velvetyne.fr/",
+      "downloadUrl": "https://velvetyne.fr/fonts/",
+      "licenseName": "Mostly OFL; a few special open licenses",
+      "licensePlain": "A French libre type foundry. Its FAQ states every hosted font is libre and open source: use, modify, and redistribute in personal and commercial works. Most fonts are SIL OFL; a handful use custom open licenses - so check the license shown on each font's page.",
+      "sellPlain": "Yes, you may use these fonts in products you sell. The foundry asks you to credit the designer and foundry when you can. Do not sell the font files as a collection, and check for the occasional non-OFL license before relying on a font commercially.",
+      "proofUrl": "https://velvetyne.fr/about/faq/",
+      "proofNote": "Velvetyne's published FAQ says all hosted fonts are libre and open source and 'true for all personal and commercial works', with each font's license linked on its page.",
+      "attribution": "check",
+      "needs": [
+        "book-cover",
+        "print",
+        "website",
+        "social"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Striking display and experimental faces. Great for book covers and posters; not a workhorse body-text library."
+    },
+    {
+      "name": "Pixabay Music",
+      "category": "music",
+      "url": "https://pixabay.com/music/",
+      "downloadUrl": "https://pixabay.com/music/",
+      "licenseName": "Pixabay Content License",
+      "licensePlain": "Pixabay grants an irrevocable worldwide license to use its tracks free, in commercial and personal projects, with no attribution required. The one big rule: you may not distribute the music files on their own as if the files were your product.",
+      "sellPlain": "Yes, in videos, audiobooks, podcast intros, courses, and games you sell or monetize - as part of a bigger creative work. No for reselling or redistributing the raw MP3s, and be gentle around music streaming services like Spotify, which can add distributor requirements.",
+      "proofUrl": "https://pixabay.com/service/license-summary/",
+      "proofNote": "Pixabay's official Content License Summary states you may use content for free, without attribution, and modify it, but not sell it on a standalone basis.",
+      "attribution": "none",
+      "needs": [
+        "video",
+        "social",
+        "website",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "The easiest 'no-attribution' music option for YouTube and audiobooks. Keep a dated screenshot or license note for high-stakes projects."
+    },
+    {
+      "name": "incompetech (Kevin MacLeod)",
+      "category": "music",
+      "url": "https://incompetech.com/",
+      "downloadUrl": "https://incompetech.com/music/royalty-free/",
+      "licenseName": "Creative Commons BY 4.0",
+      "licensePlain": "Thousands of tracks licensed under CC BY 4.0: free for any use, including commercial, for any project, forever - but a visible credit is mandatory. The site even generates the exact credit line to copy-paste.",
+      "sellPlain": "Yes, you can sell videos with this music in it (that is the point of 'BY' = commercial OK). You cannot resell the music itself, and you cannot drop the credit. If a paid 'no credit' license is needed (e.g. ads where credit is impossible), the site sells a Standard License.",
+      "proofUrl": "https://incompetech.com/music/royalty-free/licenses/",
+      "proofNote": "Kevin MacLeod's licenses page publicly offers every piece under Creative Commons BY 4.0 free of charge and publishes the required credit format.",
+      "attribution": "credit",
+      "needs": [
+        "video",
+        "social",
+        "website",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Add the credit BEFORE publishing to dodge false YouTube Content ID claims; place it in the video description. Site was active with new uploads in 2026."
+    },
+    {
+      "name": "Musopen",
+      "category": "music",
+      "url": "https://musopen.org/",
+      "downloadUrl": "https://musopen.org/music/",
+      "licenseName": "Public domain / CC0 and CC (per recording)",
+      "licensePlain": "A US 501(c)(3) nonprofit that shares public-domain classical recordings and 100,000+ sheet-music PDFs. Recordings carry a license icon per track (public domain, CC0, or other CC) - check the icon on the piece you download.",
+      "sellPlain": "Yes for PD/CC0 tracks: audiobook interludes, artsy videos, games. CC BY tracks are fine for commercial use with a credit. Free accounts allow a limited number of downloads per day; a paid tier exists for bulk/HD.",
+      "proofUrl": "https://musopen.org/about/",
+      "proofNote": "Musopen's about page states its 501(c)(3) mission to provide recordings and sheet music to the public for free, without copyright restrictions.",
+      "attribution": "check",
+      "needs": [
+        "video",
+        "social",
+        "book-interior"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "The classic go-to for royalty-free classical recordings. Read the license icon on each track and save a screenshot."
+    },
+    {
+      "name": "Free Music Archive",
+      "category": "music",
+      "url": "https://freemusicarchive.org/",
+      "downloadUrl": "https://freemusicarchive.org/home",
+      "licenseName": "Creative Commons (varies by track)",
+      "licensePlain": "A long-running archive of independently licensed music. Every track shows its Creative Commons license, so you always know the rules before downloading. Many tracks allow commercial use but demand a credit; a few ban it (NC = non-commercial only).",
+      "sellPlain": "Track by track. Filter to CC0 or CC BY tracks for anything commercial: are fine in videos and courses you sell. NC-marked tracks are only for non-commercial use - skip those for monetized channels.",
+      "proofUrl": "https://freemusicarchive.org/",
+      "proofNote": "Every FMA track page displays the exact Creative Commons license attached to it, plus a right-saved 'legal' download; the archive is now curated by Tribe of Noise.",
+      "attribution": "check",
+      "needs": [
+        "video",
+        "social",
+        "website"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Great for genre and mood diversity beyond generic production music. Read the license badge on each track - it is your proof."
+    },
+    {
+      "name": "Bootstrap Icons",
+      "category": "icons",
+      "url": "https://icons.getbootstrap.com/",
+      "downloadUrl": "https://icons.getbootstrap.com/",
+      "licenseName": "MIT",
+      "licensePlain": "Nearly 2,000 SVG icons under the MIT license - the friendliest license in software. You may use, modify, and share them in any project, commercial or not, with no credit and no notices needed.",
+      "sellPlain": "Yes, everywhere: apps, websites, ebooks, merchandise graphics, courses you sell. No attribution, no strings.",
+      "proofUrl": "https://github.com/twbs/icons/blob/main/LICENSE",
+      "proofNote": "The project's LICENSE file in its official repository is a plain MIT license text.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "book-cover",
+        "book-interior",
+        "print",
+        "social",
+        "video",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Clean, consistent stroke style. SVG is vector, so it stays crisp at any size and works in most design tools."
+    },
+    {
+      "name": "Feather Icons",
+      "category": "icons",
+      "url": "https://feathericons.com/",
+      "downloadUrl": "https://feathericons.com/",
+      "licenseName": "MIT",
+      "licensePlain": "About 280 simple, elegant SVG icons under the MIT license. Use them anywhere, commercially, without crediting anyone.",
+      "sellPlain": "Yes, in all commercial and personal work - apps, sites, products you sell, merch. No strings.",
+      "proofUrl": "https://github.com/feathericons/feather/blob/main/LICENSE",
+      "proofNote": "The official repository's LICENSE file is the standard MIT text.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "book-cover",
+        "print",
+        "social",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Perfect when you want a light, minimal look. Simple to recolor because the SVGs inherit their stroke color."
+    },
+    {
+      "name": "Lucide",
+      "category": "icons",
+      "url": "https://lucide.dev/",
+      "downloadUrl": "https://lucide.dev/",
+      "licenseName": "ISC (MIT-equivalent)",
+      "licensePlain": "A community fork of Feather with over 1,600 icons under the ISC license, which grants the same freedoms as MIT: use, copy, modify, sell, and distribute in any project with no attribution required.",
+      "sellPlain": "Yes, in anything you sell. No strings, no credit, no notices required.",
+      "proofUrl": "https://github.com/lucide-icons/lucide/blob/main/LICENSE",
+      "proofNote": "The official repository's LICENSE file is ISC, a permissive license in the same family as MIT.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "book-cover",
+        "book-interior",
+        "print",
+        "social",
+        "video",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Active project with packages for React, Vue, Svelte, and plain SVG downloads."
+    },
+    {
+      "name": "Tabler Icons",
+      "category": "icons",
+      "url": "https://tabler.io/icons",
+      "downloadUrl": "https://tabler.io/icons",
+      "licenseName": "MIT",
+      "licensePlain": "Thousands of high-quality stroke icons under the MIT license: free for personal and commercial purposes, no attribution, no notices.",
+      "sellPlain": "Yes, everywhere - commercial apps, sites, books, merch. MIT does not restrict you.",
+      "proofUrl": "https://github.com/tabler/tabler-icons/blob/main/LICENSE",
+      "proofNote": "The official repository's LICENSE file is a standard MIT license.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "book-cover",
+        "print",
+        "social",
+        "video",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "One of the largest consistent open icon sets. Watch the project page for any paid extras - the icon SVGs themselves remain MIT."
+    },
+    {
+      "name": "Phosphor Icons",
+      "category": "icons",
+      "url": "https://phosphoricons.com/",
+      "downloadUrl": "https://phosphoricons.com/",
+      "licenseName": "MIT",
+      "licensePlain": "A flexible icon family ('bold', 'thin', 'fill', 'duotone' styles) released under MIT. Free for any use including commercial, no attribution needed.",
+      "sellPlain": "Yes, use them in products you sell with zero strings - MIT applies to the whole family.",
+      "proofUrl": "https://github.com/phosphor-icons/core/blob/main/LICENSE",
+      "proofNote": "The core icons repository's LICENSE file is the MIT license text.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "book-cover",
+        "print",
+        "social",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "The multiple weights are handy when you need one icon family to match different design 'moods'."
+    },
+    {
+      "name": "Iconoir",
+      "category": "icons",
+      "url": "https://iconoir.com/",
+      "downloadUrl": "https://iconoir.com/",
+      "licenseName": "MIT",
+      "licensePlain": "More than 1,300 clean, geometric icons under MIT. Copy the SVG, drop it in, done - commercial use included, no credit required.",
+      "sellPlain": "Yes, in all personal and commercial work, no notices needed.",
+      "proofUrl": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
+      "proofNote": "The official repository carries an MIT license file covering all icon assets.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "book-cover",
+        "print",
+        "social",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Popular for UI work; easy to edit because paths are individually grouped."
+    },
+    {
+      "name": "Font Awesome Free icons",
+      "category": "icons",
+      "url": "https://fontawesome.com/",
+      "downloadUrl": "https://fontawesome.com/icons",
+      "licenseName": "Icons: CC BY 4.0 (code: MIT / OFL)",
+      "licensePlain": "Font Awesome is famous for a reason. The free tier's icons are licensed under Creative Commons BY 4.0 - commercial use is allowed, but you must keep a visible credit line somewhere humans can find it (footer, docs, description). The code and webfont files are MIT/OFL.",
+      "sellPlain": "Yes, in commercial products you sell, with credit: 'Icons from Font Awesome (fontawesome.com), licensed under CC BY 4.0' placed where a curious person would look. Do not resell the icon set itself.",
+      "proofUrl": "https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt",
+      "proofNote": "Font Awesome's own LICENSE file spells out the CC BY 4.0 grant for icons and the MIT/OFL terms for code, and the website links it.",
+      "attribution": "credit",
+      "needs": [
+        "website",
+        "book-cover",
+        "book-interior",
+        "print",
+        "social",
+        "merch"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "CC BY means credit is mandatory - use one of the MIT-licensed sets above if you want zero-strings icons."
+    },
+    {
+      "name": "Mockup World",
+      "category": "mockups",
+      "url": "https://www.mockupworld.co/",
+      "downloadUrl": "https://www.mockupworld.co/all-mockups/",
+      "licenseName": "Set by each mockup's creator",
+      "licensePlain": "A directory of free PSD mockups (book covers, posters, devices, packaging). Each mockup carries the license its creator attached - most are free for personal and commercial use, but the exact terms vary, so read the license on the download page of the mockup you want.",
+      "sellPlain": "Yes, for most mockups: render your book cover or product design for your book page, ads, or store. No for reselling or redistributing the mockup files themselves - that is a Prohibited use on almost every listing.",
+      "proofUrl": "https://www.mockupworld.co/faq",
+      "proofNote": "Mockup World's own FAQ explains that free downloads come with license terms from each creator, and tells you to read the terms on the original download page before commercial use.",
+      "attribution": "check",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "social",
+        "website"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Free PSD mockups usually need Photoshop (or Photopea, a free browser clone) to swap in your artwork. The site also includes free bundles."
+    },
+    {
+      "name": "Graphic Burger",
+      "category": "mockups",
+      "url": "https://graphicburger.com/",
+      "downloadUrl": "https://graphicburger.com/",
+      "licenseName": "Graphic Burger Free License",
+      "licensePlain": "Free for both personal and commercial use, with no attribution required, as stated on the site's license page. The one rule that matters: do not resell or redistribute the resource files themselves.",
+      "sellPlain": "Yes, use the mockups, graphics, and templates inside projects you sell (book promos, product pages, ads). No for selling the PSD files as-is or as a pack.",
+      "proofUrl": "https://graphicburger.com/license/",
+      "proofNote": "Graphic Burger's published license page states its resources are free for personal and commercial use without attribution and prohibits reselling the files.",
+      "attribution": "none",
+      "needs": [
+        "book-cover",
+        "print",
+        "merch",
+        "social",
+        "website"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "Tasty PSD mockups and UI assets by a small studio; every download page links the same license."
+    },
+    {
+      "name": "unDraw",
+      "category": "mockups",
+      "url": "https://undraw.co/",
+      "downloadUrl": "https://undraw.co/illustrations",
+      "licenseName": "unDraw open license (custom, very permissive)",
+      "licensePlain": "A huge library of flat-style SVG illustrations. The license grants free use for commercial and personal purposes with no attribution and no cost. Rules: do not resell the illustrations as-is, do not rebuild a competing illustration service, and do not use them to train AI models.",
+      "sellPlain": "Yes, inside products you sell: websites, books, decks, courses. Recolor and edit freely. No for selling or repacking the illustration set itself.",
+      "proofUrl": "https://undraw.co/license",
+      "proofNote": "unDraw's license page states the full grant verbatim: free for commercial purposes, no permission or credit needed, with the re-selling and AI-training exclusions spelled out.",
+      "attribution": "none",
+      "needs": [
+        "website",
+        "social",
+        "book-cover",
+        "print"
+      ],
+      "recheck": "2026-10-30",
+      "notes": "One consistent style. On-the-fly brand color switch makes it perfect for quick, polished blog and course graphics."
+    }
+  ]
+}
+<!-- ASSETS_JSON_END -->
+</script>
+
+<script>
+(function () {
+  "use strict";
+  const DATA = JSON.parse(document.getElementById("assets-data").textContent);
+  const NEED_DEFS = DATA.needs || {};
+  const state = { q: "", needs: [], category: "", attribution: "", recheck: "" };
+
+  function hasNeedCheck(entry, needKeys) {
+    return needKeys.every(function (k) {
+      return (entry.needs || []).indexOf(k) !== -1;
+    });
+  }
+
+  function filterEntries(entries, s) {
+    const q = (s.q || "").trim().toLowerCase();
+    const words = q.length ? q.split(/\s+/) : [];
+    return entries.filter(function (e) {
+      if (s.needs && s.needs.length && !hasNeedCheck(e, s.needs)) return false;
+      if (s.category && e.category !== s.category) return false;
+      if (s.attribution && e.attribution !== s.attribution) return false;
+      if (s.recheck === "year") {
+        const d = new Date(e.recheck + "T00:00:00Z").getTime();
+        const oneYear = 366 * 24 * 60 * 60 * 1000;
+        if (!isFinite(d) || (Date.now() - d) > oneYear) return false;
+      }
+      if (words.length) {
+        const haystack = [
+          e.name, e.category, e.licenseName, e.licensePlain,
+          e.sellPlain, e.proofNote, e.notes || ""
+        ].join(" ").toLowerCase();
+        for (let i = 0; i < words.length; i++) {
+          if (haystack.indexOf(words[i]) === -1) return false;
+        }
+      }
+      return true;
+    });
+  }
+
+  function pill(text, cls) {
+    return '<span class="pill ' + cls + '">' + text + "</span>";
+  }
+
+  function attributionLabel(a) {
+    if (a === "none") return "No credit needed";
+    if (a === "credit") return "Credit required";
+    return "Check each item";
+  }
+
+  function cardHtml(e) {
+    const d = [];
+    d.push('      <div class="card">');
+    d.push('        <h2><a href="' + e.url + '" rel="noopener">' + e.name + "</a>" +
+      pill(e.category, "") + "</h2>");
+    d.push('        <div class="links-top">' + pill(e.licenseName, "license " + "a-" + e.attribution) + "</div>");
+    d.push("        <dl>");
+    d.push("          <div><dt>License in plain English</dt><dd>" + e.licensePlain + "</dd></div>");
+    d.push("          <div><dt>What you may sell</dt><dd>" + e.sellPlain + "</dd></div>");
+    d.push("          <div><dt>Credit</dt><dd>" + attributionLabel(e.attribution) + "</dd></div>");
+    d.push('          <div><dt>Proof it is truly free</dt><dd><a href="' + e.proofUrl + '" rel="noopener">Official proof link</a> - ' + e.proofNote + "</dd></div>");
+    if (e.notes) {
+      d.push("          <div><dt>Good to know</dt><dd>" + e.notes + "</dd></div>");
+    }
+    d.push("        </dl>");
+    d.push('        <div class="links">' +
+      '<a href="' + e.downloadUrl + '" rel="noopener">Official download page &nearr;</a>' +
+      '<a href="' + e.proofUrl + '" rel="noopener">License proof &nearr;</a></div>');
+    d.push('        <div class="meta">For: ' + (e.needs || []).map(function (n) {
+      return NEED_DEFS[n] ? NEED_DEFS[n].label : n;
+    }).join(", ") + '<br>License re-checked: <strong>' + e.recheck + "</strong></div>");
+    d.push("      </div>");
+    return d.join("\n");
+  }
+
+  function render() {
+    const list = filterEntries(DATA.entries, state);
+    const cardsEl = document.getElementById("cards");
+    if (!list.length) {
+      cardsEl.innerHTML = '<p class="empty">No sources match those filters. Try clearing a chip or two.</p>';
+    } else {
+      cardsEl.innerHTML = list.map(cardHtml).join("\n");
+    }
+    document.getElementById("count").textContent =
+      "Showing " + list.length + " of " + DATA.entries.length + " sources" +
+      (state.needs.length ? " for your needs" : "") + ".";
+  }
+
+  function initChips() {
+    const holder = document.getElementById("needs");
+    const chips = [];
+    Object.keys(NEED_DEFS).forEach(function (key) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip";
+      b.dataset.need = key;
+      b.setAttribute("aria-pressed", "false");
+      b.textContent = NEED_DEFS[key].label;
+      b.title = NEED_DEFS[key].blurb;
+      b.addEventListener("click", function () {
+        const pressed = b.getAttribute("aria-pressed") === "true";
+        b.setAttribute("aria-pressed", pressed ? "false" : "true");
+        state.needs = chips
+          .filter(function (c) { return c.getAttribute("aria-pressed") === "true"; })
+          .map(function (c) { return c.dataset.need; });
+        render();
+      });
+      chips.push(b);
+      holder.appendChild(b);
+    });
+  }
+
+  function init() {
+    const meta = DATA.meta || {};
+    document.title = meta.title + " - truly free sources, license rules in plain English";
+    document.querySelector("header.site h1").textContent = meta.title;
+    document.querySelector("header.site p.tagline").textContent = meta.tagline;
+    document.getElementById("disclaimer-note").textContent = meta.disclaimer;
+    document.getElementById("companion-link").title = "Companion guide: " + (meta.companionNote || "plain-english-ip-guide");
+
+    initChips();
+    document.getElementById("search").addEventListener("input", function (ev) {
+      state.q = ev.target.value;
+      render();
+    });
+    document.getElementById("category").addEventListener("change", function (ev) {
+      state.category = ev.target.value;
+      render();
+    });
+    document.getElementById("attribution").addEventListener("change", function (ev) {
+      state.attribution = ev.target.value;
+      render();
+    });
+    document.getElementById("recheck").addEventListener("change", function (ev) {
+      state.recheck = ev.target.value;
+      render();
+    });
+    render();
+  }
+
+  if (typeof window !== "undefined" && window.__NOT_RENDER_IN_TESTS__ !== true) {
+    init();
+  }
+
+  window.__APP__ = { filterEntries: filterEntries, cardHtml: cardHtml, state: state };
+})();
+</script>
+</body>
+</html>
